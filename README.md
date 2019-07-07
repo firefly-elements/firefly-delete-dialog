@@ -4,7 +4,10 @@ This component allows the user to delete a doctype from the database.
 
 ##Installation 
 
+```
 npm install --save @firefly/firefly-delete-dialog
+
+```
 
 ## In an HTML file
 ```
@@ -33,6 +36,25 @@ npm install --save @firefly/firefly-delete-dialog
 </body>
 </html>
 ```
+
+## In Polymer3
+
+```
+import {PolymerElement, html} from '@polymer/polymer';
+import '@firefly/firefly-delete-dialog';
+
+class SampleElement extends PolymerElement {
+  static get template() {
+    return html`
+    <firefly-delete-dialog></firefly-delete-dialog>
+    `;
+  }
+}
+customElements.define('sample-element', SampleElement);
+
+```
+
+
 
 ## Running the demo locally
 ```
