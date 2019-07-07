@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="refresh" content="0;url=demo/" /> -->
+    <title>firefly-delete-dialog</title>
+    <script type="module">
+      import './firefly-delete-dialog.js';
+    </script>
+  </head>
+  <body>
+    <!--
+        ELEMENT API DOCUMENTATION SUPPORT COMING SOON
+        Visit demo/index.html to see live examples of your element running.
+        This page will automatically redirect you there when run in the browser
+        with `polymer serve`.
+      -->
+
+<firefly-delete-dialog id = "firefly-dialog">
+
+</firefly-delete-dialog>
+
+<button onclick="toggleDialog()">Press Me</button>
+
+<script>
+
+toggleDialog = () => {
+   document.getElementById("firefly-dialog").open()
+}
+
+document.querySelector('firefly-delete-dialog').addEventListener('card-deleted', function (e) {
+      console.log("card delete event fired") // true
+    })
+
+</script>
+
+  </body>
+</html>
