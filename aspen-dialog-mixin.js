@@ -4,7 +4,7 @@
  * @polymerMixin AspDialogMixin
  * @mixinFunction 
  */
-export const AspDialogMixin = (superclass) => class extends superclass {
+export const AspenDialogMixin = (superclass) => class extends superclass {
 		// constructor(){
 		// 	super();
 		// }

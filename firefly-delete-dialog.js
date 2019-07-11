@@ -1,9 +1,10 @@
-import './node_modules/@polymer/paper-dialog/paper-dialog.js';
-import './node_modules/@polymer/paper-button/paper-button.js';
-import {AspDialogMixin} from './aspen_components/aspen-dialog-mixin.js';
-import { PolymerElement, html } from './node_modules/@polymer/polymer/polymer-element.js';
-import './node_modules/@polymer/paper-dialog-behavior/paper-dialog-shared-styles.js';
+import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+import '@polymer/paper-dialog/paper-dialog.js';
+import '@polymer/paper-button/paper-button.js';
+import '@polymer/paper-dialog-behavior/paper-dialog-shared-styles.js';
+
 import { afterNextRender } from '@polymer/polymer/lib/utils/render-status.js';
+import {AspenDialogMixin} from './aspen-dialog-mixin.js';
 /**
  * `firefly-delete-dialog` This component allows the user to delete a doctype from the database.
  *
@@ -12,7 +13,7 @@ import { afterNextRender } from '@polymer/polymer/lib/utils/render-status.js';
  * @polymer
  * @extends {Polymer.Element}
  */
-class AspDeleteDialog extends AspDialogMixin(PolymerElement) {
+class FireFlyDeleteDialog extends AspenDialogMixin(PolymerElement) {
 
     static get template() {
         return html`
@@ -121,7 +122,6 @@ class AspDeleteDialog extends AspDialogMixin(PolymerElement) {
 				}));
     }
 
-
 }
 
-window.customElements.define(AspDeleteDialog.is, AspDeleteDialog);
+window.customElements.define(FireFlyDeleteDialog.is, FireFlyDeleteDialog);
