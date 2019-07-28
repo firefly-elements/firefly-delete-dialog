@@ -4,7 +4,8 @@ import '@polymer/paper-button/paper-button.js';
 import '@polymer/paper-dialog-behavior/paper-dialog-shared-styles.js';
 
 import { afterNextRender } from '@polymer/polymer/lib/utils/render-status.js';
-import {AspenDialogMixin} from './aspen-dialog-mixin.js';
+import {AspenDialogMixin} from '@aspen-elements/aspen-dialog-mixin';
+
 /**
  * `firefly-delete-dialog` This component allows the user to delete a doctype from the database.
  *

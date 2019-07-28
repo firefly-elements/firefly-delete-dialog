@@ -9,6 +9,7 @@
   },
   "main": "firefly-delete-dialog.js",
   "dependencies": {
+    "@aspen-elements/aspen-dialog-mixin": "^0.5.1",
     "@polymer/polymer": "^3.0.0"
   },
   "devDependencies": {
